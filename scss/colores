@@ -1,0 +1,15 @@
+@mixin color {($funcion, $color)
+
+    
+
+    
+}
+
+
+
+@each $caja, $color in $cajas {
+    .caja--#{$caja} {
+    background-color: $color;
+    }
+    }
+    

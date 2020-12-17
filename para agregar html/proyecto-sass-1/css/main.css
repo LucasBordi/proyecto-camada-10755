@@ -1,0 +1,194 @@
+/*para index*/
+body {
+  background-color: coral;
+  display: block;
+  height: 100%;
+  width: 100%; }
+  body main {
+    background-color: coral;
+    height: 100%;
+    width: 100%; }
+    body main div {
+      /*titulo secundario*/
+      /*caja del h3*/ }
+      body main div div table {
+        background: antiquewhite;
+        margin: 20px;
+        padding: 5px 5px;
+        text-align: initial; }
+        body main div div table thead {
+          background-color: palegreen; }
+          body main div div table thead th {
+            color: darkblue;
+            font-size: small; }
+          body main div div table thead td {
+            color: #044d08; }
+      body main div div header div div {
+        /*barra header*/ }
+        @media only screen and (min-width: 782px) {
+          body main div div header div div div.barra-inicial {
+            background-color: black;
+            height: 60px;
+            width: 100%; }
+          body main div div header div div div.bar-centro {
+            color: white;
+            text-align: center; }
+          body main div div header div div div div.bar-right {
+            color: white;
+            text-align: right; } }
+      body main div div header div .navbar-dark .navbar-nav .nav-link {
+        color: white;
+        text-align: center; }
+      body main div div header div nav {
+        /*barra navegacion*/ }
+        body main div div header div nav ul {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          margin: 0rem;
+          padding: 0rem; }
+          body main div div header div nav ul li {
+            background-color: orange;
+            border: solid black;
+            border-radius: 10px;
+            color: black;
+            display: inline-block;
+            height: 2.25rem;
+            margin: 0.313rem;
+            text-decoration: none;
+            width: 10.5rem;
+            /*color letra menu*/ }
+            body main div div header div nav ul li .dropdown-menu {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              z-index: 1000;
+              display: none;
+              float: left;
+              min-width: 10rem;
+              padding: .5rem 0;
+              margin: .125rem 0 0;
+              font-size: 1rem;
+              color: white;
+              text-align: center;
+              list-style: none;
+              background-color: orange;
+              background-clip: padding-box;
+              border: 2px solid black;
+              border-radius: .25rem; }
+            body main div div header div nav ul li .dropdown-item {
+              /*hover*/
+              display: block;
+              width: 100%;
+              padding: 0.25rem 1.5rem;
+              color: whitesmoke;
+              clear: both;
+              font-weight: 400;
+              text-align: inherit;
+              white-space: nowrap;
+              background-color: orange;
+              border: 0; }
+            body main div div header div nav ul li a {
+              align-content: center;
+              color: white;
+              font-family: "Goldman", cursive, arial;
+              font-size: 11px;
+              text-decoration: none; }
+              body main div div header div nav ul li a .navbar-dark .navbar-nav .nav-link {
+                color: black; }
+      body main div h1 strom {
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: aparecer;
+        border-bottom: 0.125rem solid black;
+        color: black;
+        font-size: xxx-large;
+        text-align: center; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      body main div .caja {
+        align-items: flex-start;
+        background-color: #1d580a;
+        background-image: linear-gradient(green, yellow);
+        border: 3px solid gold;
+        border-radius: 10px;
+        display: flex;
+        justify-content: stretch;
+        grid-area: caja;
+        margin: 1.25rem 0.313rem; }
+        body main div .caja p {
+          display: block;
+          color: white;
+          font-family: "Goldman", cursive, arial;
+          text-align: center; }
+      body main div .h2,
+      body main div h2 {
+        font-size: 1.3rem; }
+      body main div h2 strom {
+        border-bottom: 0.125rem solid black;
+        color: black;
+        font-size: large;
+        padding: 0.625rem;
+        text-align: left; }
+      body main div .caja2 {
+        align-items: flex-start;
+        background-color: #1d580a;
+        background-image: linear-gradient(green, yellow);
+        border: 3px solid gold;
+        border-radius: 10px;
+        display: flex;
+        grid-area: caja2;
+        justify-content: stretch;
+        margin: 1.25rem 0.313rem; }
+        body main div .caja2 p {
+          display: block;
+          color: white;
+          font-family: "Goldman", cursive, arial;
+          text-align: center; }
+      body main div h3 {
+        padding: 1em;
+        text-align: left; }
+      body main div div div .caja3 {
+        align-items: flex-start;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+        background-color: #1d580a;
+        background-image: linear-gradient(green, yellow);
+        border: 3px solid gold;
+        border-radius: 10px;
+        grid-area: caja3;
+        justify-content: stretch;
+        margin: 1.25rem 0.313rem; }
+        body main div div div .caja3 p {
+          display: block;
+          color: white;
+          font-family: "Goldman", cursive, arial;
+          text-align: center; }
+      body main div .ir-contacto {
+        align-items: flex-start;
+        animation-duration: 5s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+        background-color: #1d580a;
+        display: flex;
+        grid-area: ir-contacto;
+        height: 3.125rem;
+        justify-content: space-around;
+        line-height: 3.125rem;
+        margin: 0px 0.313rem; }
+  body footer {
+    background-color: #223137;
+    font-size: 1.5rem;
+    grid-area: footer;
+    text-align: center;
+    width: 100%; }
+    body footer p {
+      display: block;
+      color: white;
+      font-family: "Goldman", cursive, arial;
+      text-align: center; }

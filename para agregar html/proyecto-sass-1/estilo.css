@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*para index*/
+
+main {
+    background-color: rgb(248, 146, 50);
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(248, 146, 50);
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+div.caja {
+    align-items: flex-start;
+    background-color: rgb(29, 88, 10);
+    background-image: linear-gradient(green, yellow);
+    border: 3px solid gold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: stretch;
+    grid-area: caja;
+    margin: 1.25rem 0.313rem;
+}
+
+div.caja2 {
+    align-items: flex-start;
+    background-color: rgb(29, 88, 10);
+    background-image: linear-gradient(green, yellow);
+    border: 3px solid gold;
+    border-radius: 10px;
+    display: flex;
+    grid-area: caja2;
+    justify-content: stretch;
+    margin: 1.25rem 0.313rem;
+}
+
+div.caja3 {
+    align-items: flex-start;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    background-color: rgb(29, 88, 10);
+    background-image: linear-gradient(green, yellow);
+    border: 3px solid gold;
+    border-radius: 10px;
+    grid-area: caja3;
+    justify-content: stretch;
+    margin: 1.25rem 0.313rem;
+}
+
+/*caja del h3*/
+
+div.ir-contacto {
+    align-items: flex-start;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    background-color: rgb(29, 88, 10);
+    display: flex;
+    grid-area: ir-contacto;
+    height: 3.125rem;
+    justify-content: space-around;
+    line-height: 3.125rem;
+    margin: 0px 0.313rem;
+}
+
+/*color barra nav*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: orange;
+    border: 0;
+}
+.h2,
+h2 {
+    font-size: 1.3rem;
+}
+
+/*barra head*/
+@media only screen and (min-width: 782px) {
+    div.barra-inicial {
+        background-color: black;
+        height: 60px;
+        width: 100%;
+    }
+    div.bar-centro {
+        color: white;
+        text-align: center;
+    }
+    div div.bar-right {
+        color: white;
+        text-align: right;
+    }
+}
+
+/*BARRA NAVEGACIÓN*/
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/*lista inicio*/
+
+ul li {
+    background-color: orange;
+    border: solid black;
+    border-radius: 10px;
+    /*color: orange;*/
+    display: inline-block;
+    height: 2.25rem;
+    margin: 0.313rem;
+    text-decoration: none;
+    width: 10.5rem;
+}
+
+/*color letra menu*/
+
+ul li a {
+    align-content: center;
+    color: white;
+    font-family: "Goldman", cursive, arial;
+    font-size: 0.538em;
+    text-decoration: none;
+}
+
+/*para todos los textos*/
+
+p {
+    display: block;
+    color: white;
+    font-family: "Goldman", cursive, arial;
+    text-align: center;
+}
+
+/*tabla Para las listas*/
+
+table {
+    background: antiquewhite;
+    margin: 20px;
+    padding: 5px 5px;
+    text-align: initial;
+}
+
+thead {
+    background-color: palegreen;
+}
+
+th {
+    color: darkblue;
+    font-size: small;
+}
+
+td {
+    color: rgb(4, 77, 8);
+}
+
+/*titulo animacion*/
+
+h1 strom {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: aparecer;
+    border-bottom: 0.125rem solid black;
+    color: black;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*titulo secundario*/
+
+h2 strom {
+    border-bottom: 0.125rem solid black;
+    color: black;
+    font-size: large;
+    padding: 0.625rem;
+    text-align: left;
+}
+
+h3 {
+    padding: 1em;
+    text-align: left;
+}
+
+footer {
+    background-color: #223137;
+    font-size: 1.5rem;
+    grid-area: footer;
+    text-align: center;
+    width: 100%;
+}
