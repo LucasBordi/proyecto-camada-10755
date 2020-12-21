@@ -5701,7 +5701,7 @@ button.close {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: transparent no-repeat center center;
+    background: black no-repeat center center;
     background-size: 100% 100%
 }
 
@@ -5739,7 +5739,7 @@ button.close {
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, .5)
+    background-color: black
 }
 
 .carousel-indicators li::before {
@@ -5763,7 +5763,7 @@ button.close {
 }
 
 .carousel-indicators .active {
-    background-color: #fff
+    background-color: #09d259
 }
 
 .carousel-caption {

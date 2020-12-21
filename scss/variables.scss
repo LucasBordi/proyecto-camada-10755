@@ -1,0 +1,10 @@
+@mixin caja($caja-color,$borde-caja) {
+
+    align-items: flex-start;
+    background-image: $caja-color;
+    border: $borde-caja;
+    border-radius: 10px;
+    display: flex;
+    justify-content: stretch;
+    margin: 1.25rem 0.313rem;   
+}
