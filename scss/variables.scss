@@ -1,3 +1,11 @@
+$blanco:white;
+$negro:black;
+$borde-negro:black;
+$naranja:orange;
+$titulo-tabla:palegreen;
+
+
+
 @mixin caja($caja-color,$borde-caja) {
 
     align-items: flex-start;
@@ -8,3 +16,25 @@
     justify-content: stretch;
     margin: 1.25rem 0.313rem;   
 }
+@mixin texto($texto-color,$texto-estilo,$texto-alinear) {
+    display: block;
+    color:$texto-color;
+    font-family:$texto-estilo;
+    text-align:$texto-alinear; 
+}
+
+@mixin footer($footer-color,$footer-font,$alinear) {
+    background-color: $footer-color;
+        font-size:$footer-font;
+        text-align:$alinear;
+        width: 100%;
+}
+
+
+@mixin main($main,$main-height,$main-width) {
+    background-color:$main;
+        height:$main-height;
+        width:$main-width;
+}
+
+
