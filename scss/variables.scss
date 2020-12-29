@@ -1,17 +1,11 @@
-$blanco:white;
-$negro:black;
-$borde-negro:black;
-$naranja:orange;
-$titulo-tabla:palegreen;
-
-
 
 @mixin caja($caja-color,$borde-caja) {
 
     align-items: flex-start;
-    background-image: $caja-color;
+    background-color: $caja-color;
     border: $borde-caja;
     border-radius: 10px;
+    color:$blanco ;
     display: flex;
     justify-content: stretch;
     margin: 1.25rem 0.313rem;   
@@ -37,4 +31,9 @@ $titulo-tabla:palegreen;
         width:$main-width;
 }
 
+@mixin body($body,$body-height,$body-width) {
+    background-color:$body;
+        height:$body-height;
+        width:$body-width;
+}
 

@@ -1,10 +1,11 @@
+@import "colores";
 @import "variables";
 /*para index*/
 body {
-    @include main (coral,100%,100%) ;
-    display:block;
+    @include body($body, 100%, 100%);
+    display: block;
     main {
-        @include main(coral,100%,100%);
+        @include main($main, 100%, 100%);
         div {
             div {
                 table {
@@ -25,29 +26,32 @@ body {
                 }
                 header {
                     div {
-                        div {
-                            /*barra header*/
-                            @media only screen and (min-width: 782px) {
-                                div.barra-inicial {
-                                    background-color:$negro;
-                                    height: 60px;
-                                    width: 100%;
-                                }
-                                div.bar-centro {
-                                    color: $blanco;
-                                    text-align: center;
-                                }
-                                div div.bar-right {
-                                    color:$blanco;
-                                    text-align: right;
+                        section {
+                            background-color: $barra;
+                            div {
+                                /*barra header*/
+                                @media only screen and (min-width: 782px) {
+                                    .barra-inicial {
+                                        height: 60px;
+                                        width: 100%;
+                                    }
+                                    .bar-centro {
+                                        color: $blanco;
+                                        text-align: center;
+                                    }
+                                    .bar-right {
+                                        color: $blanco;
+                                        text-align: right;
+                                    }
                                 }
                             }
                         }
                         .navbar-dark .navbar-nav .nav-link {
-                            color:$blanco;
+                            color: $blanco;
                             text-align: center;
                         }
                         nav {
+                            background-color: $barra;
                             /*barra navegacion*/
                             ul {
                                 display: flex;
@@ -56,7 +60,7 @@ body {
                                 margin: 0rem;
                                 padding: 0rem;
                                 li {
-                                    background-color:$naranja;
+                                    background-color: $color-menu;
                                     border: solid $borde-negro;
                                     border-radius: 10px;
                                     color: $negro;
@@ -79,12 +83,11 @@ body {
                                         color: $blanco;
                                         text-align: center;
                                         list-style: none;
-                                        background-color:$naranja;
+                                        background-color: $color-menu;
                                         background-clip: padding-box;
                                         border: 2px solid $borde-negro;
                                         border-radius: 0.25rem;
                                     }
-
                                     .dropdown-item {
                                         /*hover*/
                                         display: block;
@@ -95,12 +98,10 @@ body {
                                         font-weight: 400;
                                         text-align: inherit;
                                         white-space: nowrap;
-                                        background-color: $naranja;
+                                        background-color: $color-menu;
                                         border: 0;
                                     }
-
                                     /*color letra menu*/
-
                                     a {
                                         align-content: center;
                                         color: $blanco;
@@ -116,14 +117,22 @@ body {
                         }
                     }
                 }
+                .jumbotron.uno {
+                    background-image: url(../img/fondo1.jpeg);
+                    background-size: cover;
+                }
+                .jumbotron.dos {
+                    background-image: url(../img/fondo2.jpg);
+                    background-size: cover;
+                }
             }
 
             h1 strom {
                 animation-duration: 5s;
                 animation-iteration-count: infinite;
                 animation-name: aparecer;
-                border-bottom: 0.125rem solid $borde-negro;
-                color: $negro;
+                border-bottom: 0.125rem solid $color-titulo;
+                color: $color-titulo;
                 font-size: xxx-large;
                 text-align: center;
                 @keyframes aparecer {
@@ -136,9 +145,8 @@ body {
                 }
             }
             .caja {
-                @include caja (linear-gradient(green, yellow),3px solid gold);
                 p {
-                    @include texto (white,"Goldman", cursive, arial,center);
+                    @include texto(white, ("Goldman", cursive, arial), center);
                 }
             }
             /*titulo secundario*/
@@ -147,16 +155,16 @@ body {
                 font-size: 1.3rem;
             }
             h2 strom {
-                border-bottom: 0.125rem solid $borde-negro;
-                color: $negro;
+                border-bottom: 0.125rem solid $color-titulo;
+                color: $color-titulo;
                 font-size: large;
                 padding: 0.625rem;
                 text-align: left;
-            }
+            }.jumbotron{background-color: $caja-jumbotron;}
             .caja2 {
-                @include caja (linear-gradient(green, yellow),3px solid gold);
+                @include caja($caja-color,3px solid $borde-caja);
                 p {
-                    @include texto (white,"Goldman", cursive, arial,center);
+                    @include texto(white, ("Goldman", cursive, arial), center);
                 }
             }
             h3 {
@@ -166,12 +174,12 @@ body {
             div {
                 div {
                     .caja3 {
-                        @include caja (linear-gradient(green, yellow),3px solid gold);
+                        @include caja($caja-color,3px solid $borde-caja);
                         animation-duration: 2s;
                         animation-name: aparecer;
-                        animation-iteration-count: infinite; 
+                        animation-iteration-count: infinite;
                         p {
-                            @include texto (white,"Goldman", cursive, arial,center);
+                            @include texto(white, ("Goldman", cursive, arial), center);
                         }
                     }
                 }
@@ -179,9 +187,9 @@ body {
         }
     }
     footer {
-        @include footer (#223137,1.5rem,center);
+        @include footer($footer-color, 1.5rem, center);
         p {
-            @include texto (white,"Goldman", cursive, arial,center);
+            @include texto(white, ("Goldman", cursive, arial), center);
         }
     }
 }
