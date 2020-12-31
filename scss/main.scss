@@ -185,6 +185,7 @@ body {
             .h2,
             h2 {
                 font-size: 1.3rem;
+                color:$texto;
             }
             h2 strom {
                 border-bottom: 0.125rem solid $color-titulo;
@@ -195,6 +196,7 @@ body {
             }
             .jumbotron {
                 background-color: $caja-jumbotron;
+                color:$texto;
             }
             .caja2 {
                 @include caja($caja-color, 3px solid $borde-caja);
