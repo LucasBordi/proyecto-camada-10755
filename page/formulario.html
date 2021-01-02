@@ -17,98 +17,88 @@
 
 <body>
   <main>
-
-    <div class="jumbotron">
-      <h1 class="display-1">
-        <strom>Informacion Personales</strom>
-      </h1>
-    </div>
-    <div class="jumbotron">
-      <h2 class="display-6">
-        <strom>Por favor complete lo siguiente:</strom>
-      </h2>
-    </div>
-    <name name="mi-formulario" action="gracias.html" method="post"></name>
-
-    <div class="jumbotron">
-      <!--nombre-apellido-->
-      <form>
-        <div class="form-group">
-          <laber for="nombre-apellido">Nombre:</laber>
-          <input type="texto">
-        </div>
-      </form>
-
-
-      <form>
-        <div class="form-group">
-          <laber for="nombre-apellido">Apellido:
-          </laber>
-          <input type="texto">
-          </laber>
-        </div>
-      </form>
-
-      <form>
-        <div class="form-group">
-          <laber for="nombre-apellido">Mail:</laber>
-          <input type="mail">
-        </div>
-      </form>
-
-
-      <!--desplegable-->
-      <div class="form-group">
-        <laber for="disabledSelect">Asunto:</laber>
-        <select id="disabledSelect" class="form-control">
-
-          <option selected="selected" value="0">Seleccione Asunto:</option>
-          <option value="1">Comentario</option>
-          <option value="2">Quejas</option>
-          <option value="3">Informacion de productos</option>
-          <option value="4">Reclamos</option>
-          <option value="5">Pedidos</option>
-        </select>
-      </div>
-
-      <!--texto-->
-      <form>
-        <div class="form-group">
-          <label for="my_textarea">Mensaje:</label>
-          <textarea name="mi-mensaje" placeholder="Completa tu mensaje"></textarea>
-        </div>
-      </form>
-
-      <!--caja-->
-      <input type="checkbox" name="checkbox_1" value="" checked="checked">
-      <label for="caja-1">Deseo recibir promociones a mi correo</label>
-
-
-      <!--boton envio-->
-      <form action="gracias.html">
-        <laber for="boton-envio"></laber>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Resetar formulario">
-        <a href="gracias.html"></a>
-      </form>
-
-      <!--vuelver al index-->
-    </div>
-    <div class="jumbotron">
+    <div>
       <div>
-        <strom>Para volver a la página de inicio
-          <a class="sinlinea" href="../index.html">presione aqui.
-            <span class="icon-point-left">
-            </span>
-          </a>
-        </strom>
+        <header>
+          <div class="jumbotron dos">
+            <h1 class="display-1">
+              <strom>Informacion Personales</strom>
+            </h1>
+          </div>
+          <div class="jumbotron">
+            <h2 class="display-6">
+              <strom>Por favor complete lo siguiente:</strom>
+            </h2>
+          </div>
+          <name name="mi-formulario" action="gracias.html" method="post"></name>
+          <div class="jumbotron">
+            <!--nombre-apellido-->
+            <form>
+              <div class="form-group">
+                <laber for="nombre-apellido">Nombre:</laber>
+                <input type="texto">
+              </div>
+            </form>
+            <form>
+              <div class="form-group">
+                <laber for="nombre-apellido">Apellido:
+                </laber>
+                <input type="texto">
+                </laber>
+              </div>
+            </form>
+            <form>
+              <div class="form-group">
+                <laber for="nombre-apellido">Mail:</laber>
+                <input type="mail">
+              </div>
+            </form>
+            <!--desplegable-->
+            <div class="form-group">
+              <laber for="disabledSelect">Asunto:</laber>
+              <select id="disabledSelect" class="form-control">
+                <option selected="selected" value="0">Seleccione Asunto:</option>
+                <option value="1">Informacion de productos</option>
+                <option value="2">Quejas</option>
+                <option value="3">Pedidos</option>
+                <option value="4">Reclamos</option>
+              </select>
+            </div>
+            <!--texto-->
+            <form>
+              <div class="form-group">
+                <label for="my_textarea">Mensaje:</label>
+                <textarea name="mi-mensaje" placeholder="Completa tu mensaje"></textarea>
+              </div>
+            </form>
+            <!--caja-->
+            <input type="checkbox" name="checkbox_1" value="" checked="checked">
+            <label for="caja-1">Deseo recibir promociones a mi correo</label>
+            <!--boton envio-->
+            <form action="gracias.html">
+              <laber for="boton-envio"></laber>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Resetar formulario">
+              <a href="gracias.html"></a>
+            </form>
+            <!--vuelver al index-->
+          </div>
+          <div class="jumbotron">
+            <div>
+              <strom>Para volver a la página de inicio
+                <a class="sinlinea" href="../index.html">presione aqui.
+                  <span class="icon-point-left">
+                  </span>
+                </a>
+              </strom>
+            </div>
+          </div>
+        </header>
       </div>
     </div>
-
   </main>
-
   <footer>
-    <p class="lead"> &copy; copyright 2020 - Lucas Bordon &reg; camada 10755 </p>
+    <p>&copy; copyright 2020 - Lucas Bordon &reg; camada 10755</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
