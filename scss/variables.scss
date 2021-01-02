@@ -1,38 +1,32 @@
-
-@mixin caja($caja-color,$borde-caja) {
+@mixin main($main, $main-height, $main-width) {
+    background-color: $main;
+    height: $main-height;
+    width: $main-width;
+}
+@mixin body($body, $body-height, $body-width) {
+    background-color: $body;
+    height: $body-height;
+    width: $body-width;
+}
+@mixin caja($caja-color, $borde-caja) {
     align-items: flex-start;
     background-color: $caja-color;
     border: $borde-caja;
     border-radius: 10px;
-    color:$texto;
-    display:flex;
-    justify-content:center;
-    margin: 1.25rem 0.313rem;   
+    color: $texto;
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem 0.313rem;
 }
-@mixin texto($texto-color,$texto-estilo,$texto-alinear) {
+@mixin texto($texto-color, $texto-estilo, $texto-alinear) {
     display: block;
-    color:$texto-color;
-    font-family:$texto-estilo;
-    text-align:$texto-alinear; 
+    color: $texto-color;
+    font-family: $texto-estilo;
+    text-align: $texto-alinear;
 }
-
-@mixin footer($footer-color,$footer-font,$alinear) {
+@mixin footer($footer-color, $footer-font, $alinear) {
     background-color: $footer-color;
-        font-size:$footer-font;
-        text-align:$alinear;
-        width: 100%;
+    font-size: $footer-font;
+    text-align: $alinear;
+    width: 100%;
 }
-
-
-@mixin main($main,$main-height,$main-width) {
-    background-color:$main;
-        height:$main-height;
-        width:$main-width;
-}
-
-@mixin body($body,$body-height,$body-width) {
-    background-color:$body;
-        height:$body-height;
-        width:$body-width;
-}
-
