@@ -18,6 +18,9 @@
     justify-content: center;
     margin: 1.25rem 0.313rem;
 }
+@mixin sombra($sombra) {
+text-shadow: 2px 2px 0 $sombra;
+}
 @mixin texto($texto-color, $texto-estilo, $texto-alinear) {
     display: block;
     color: $texto-color;

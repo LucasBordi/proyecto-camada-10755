@@ -162,6 +162,7 @@ body {
                 color: $color-titulo;
                 font-size: xxx-large;
                 text-align: center;
+                @include sombra($sombra);
                 @keyframes aparecer {
                     0% {
                         opacity: 0;
@@ -174,6 +175,7 @@ body {
             .caja {
                 p {
                     @include texto($texto,("Goldman", cursive, arial), center);
+                    @include sombra($sombra);
                 }
             }
             /*titulo secundario*/
