@@ -2,10 +2,10 @@
 @import "variables";
 /*para index*/
 body {
-    @include body($body,100%,100%);
+    @include body($body, 100%, 100%);
     display: block;
     main {
-        @include main($main,100%,100%);
+        @include main($main, 100%, 100%);
         div {
             div {
                 table {
@@ -26,31 +26,44 @@ body {
                 header {
                     div {
                         .text-dark {
-                        color: #343a40 !important;
-                        text-align: center;
-                    }
+                            color: #343a40 !important;
+                            text-align: center;
+                        }
                         section {
                             background-color: $barra;
                             border-bottom: 5px solid #707070;
                             div {
-                                
                                 /*barra header*/
-                                @media only screen and (min-width: 782px) {
-                                    .barra-inicial {
-                                        height: 60px;
-                                        width: 100%;
-                                    }
-                                    .bar-centro {
-                                        color: $texto;
-                                        text-align: center;
-                                    }
-                                    .bar-right {
-                                        color: $texto;
-                                        text-align: right;
-                                    }
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: small;
+                                @media only screen and (min-width: 1441px) and (max-width: 2700px) {
+                                    width: 1100px;
+                                }
+                                @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                                    width: 460px;
+                                }
+                                @media only screen and (min-width: 1024px) and(max-width:1100px) {
+                                    width: 321px;
+                                }
+                                @media only screen and (min-width: 767px) and(max-width:1023px) {
+                                    width: 250px;
+                                }
+                                @media only screen and (min-width: 424px) and(max-width:766px) {
+                                    width: 121px;
+                                }
+                                .barra-inicial {
+                                    height: 60px;
+                                }
+                                .bar-centro {
+                                    color: $texto;
+                                    text-align: center;
+                                }
+                                .bar-right {
+                                    color: $texto;
+                                    text-align: right;
                                 }
                             }
-                        }    
+                        }
                         .navbar-nav {
                             text-align: right;
                             display: -ms-flexbox;
@@ -60,13 +73,13 @@ body {
                             padding-left: 0;
                             margin-bottom: 0;
                             list-style: none;
-                            @media only screen and (min-width: 1441px) and (max-width: 2700px){
-                                padding-left: 600px;
+                            @media only screen and (min-width: 1441px) and (max-width: 2700px) {
+                                padding-left: 1100px;
                             }
-                            @media only screen and (min-width: 1110px) and (max-width: 1440px){
-                                padding-left: 480px;
+                            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                                padding-left: 465px;
                             }
-                            @media only screen and (min-width: 1020px)and(max-width:1100px) {
+                            @media only screen and (min-width: 1024px) and(max-width:1100px) {
                                 padding-left: 60px;
                             }
                         }
@@ -174,7 +187,7 @@ body {
             }
             .caja {
                 p {
-                    @include texto($texto,("Goldman", cursive, arial), center);
+                    @include texto($texto, ("Goldman", cursive, arial), center);
                     @include sombra($sombra);
                 }
             }
@@ -182,7 +195,7 @@ body {
             .h2,
             h2 {
                 font-size: 1.3rem;
-                color:$texto;
+                color: $texto;
             }
             h2 strom {
                 border-bottom: 0.125rem solid $color-titulo;
@@ -193,7 +206,28 @@ body {
             }
             .jumbotron {
                 background-color: $caja-jumbotron;
-                color:$texto;
+                color: $texto;
+                /*Para cajas contactos*/
+                span {
+                    font-size: 15px;
+                }
+                .box {
+                    padding: 60px 0px;
+                }
+                .box-part {
+                    background: #bedbbb;
+                    border-radius: 10px;
+                    padding: 60px 10px;
+                    margin: 30px 0px;
+                }
+                .text {
+                    margin: 20px 0px;
+                }
+                p {
+                    margin-top: 4px;
+                    margin-bottom: 2px;
+                    color: black;
+                }
             }
             .caja2 {
                 @include caja($caja-color, 3px solid $borde-caja);
@@ -206,6 +240,29 @@ body {
                 text-align: left;
             }
             div {
+
+                /*Para cajas contactos*/
+                span {
+                    font-size: 15px;
+                }
+                .box {
+                    padding: 60px 0px;
+                }
+                .box-part {
+                    background: #bedbbb;
+                    border-radius: 10px;
+                    padding: 60px 10px;
+                    margin: 30px 0px;
+                }
+                .text {
+                    margin: 20px 0px;
+                }
+                p.cajita {
+                    margin-top: 4px;
+                    margin-bottom: 2px;
+                    color: black;
+                }
+
                 div {
                     .caja3 {
                         @include caja($caja-color, 3px solid $borde-caja);
