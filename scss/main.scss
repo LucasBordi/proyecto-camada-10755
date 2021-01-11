@@ -8,19 +8,20 @@ body {
         @include main($main, 100%, 100%);
         div {
             div {
-                table {
-                    background: antiquewhite;
-                    padding: 5px 5px 5px 5px;
-                    text-align: initial;
-                    thead {
-                        background-color: $titulo-tabla;
-                        th {
-                            color: darkblue;
-                            font-size: small;
-                        }
-                        td {
-                            color: rgb(4, 77, 8);
-                        }
+                .table td,
+                .table th {
+                    padding: 0.75rem;
+                    vertical-align: initial;
+                    border-top: 1px solid #dee2e6;
+                }
+                thead {
+                    background-color: $titulo-tabla;
+                    th {
+                        color: darkblue;
+                        font-size: small;
+                    }
+                    td {
+                        color: rgb(4, 77, 8);
                     }
                 }
                 header {
@@ -73,14 +74,20 @@ body {
                             padding-left: 0;
                             margin-bottom: 0;
                             list-style: none;
-                            @media only screen and (min-width: 1441px) and (max-width: 2700px) {
-                                padding-left: 1100px;
+                            @media only screen and (min-width: 1970px) and (max-width: 2700px) {
+                                padding-left: 70%;
                             }
-                            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-                                padding-left: 465px;
+                            @media only screen and (min-width: 1544px) and (max-width: 1969px) {
+                                padding-left: 60%;
                             }
-                            @media only screen and (min-width: 1024px) and(max-width:1100px) {
-                                padding-left: 60px;
+                            @media only screen and (min-width: 1441px) and (max-width: 1543px) {
+                                padding-left: 60%;
+                            }
+                            @media only screen and (min-width: 1111px) and (max-width: 1440px) {
+                                padding-left: 40%;
+                            }
+                            @media only screen and (min-width: 1024px) and(max-width:1110px) {
+                                padding-left: 30%;
                             }
                         }
                         .navbar-dark .navbar-nav .nav-link {
@@ -163,8 +170,9 @@ body {
                     }
                 }
                 .jumbotron.dos {
-                    background-image: url(../img/fondo2.jpg);
+                    background-image: url(../img/fondo.jpg);
                     background-size: cover;
+                    color: $texto;
                 }
             }
             h1 strom {
@@ -186,9 +194,11 @@ body {
                 }
             }
             .caja {
-                p {
-                    @include texto($texto, ("Goldman", cursive, arial), center);
-                    @include sombra($sombra);
+                h3 {
+                    p {
+                        @include texto($texto, ('Oswald', cursive, arial), center);
+                        @include sombra($sombra);
+                    }
                 }
             }
             /*titulo secundario*/
@@ -200,7 +210,7 @@ body {
             h2 strom {
                 border-bottom: 0.125rem solid $color-titulo;
                 color: $color-titulo;
-                font-size: large;
+                font-size: 25px;
                 padding: 0.625rem;
                 text-align: left;
             }
@@ -232,7 +242,7 @@ body {
             .caja2 {
                 @include caja($caja-color, 3px solid $borde-caja);
                 p {
-                    @include texto($texto-caja, ("Goldman", cursive, arial), center);
+                    @include texto($texto-caja, ('Oswald', cursive, arial), center);
                 }
             }
             h3 {
@@ -240,7 +250,6 @@ body {
                 text-align: left;
             }
             div {
-
                 /*Para cajas contactos*/
                 span {
                     font-size: 15px;
@@ -262,7 +271,6 @@ body {
                     margin-bottom: 2px;
                     color: black;
                 }
-
                 div {
                     .caja3 {
                         @include caja($caja-color, 3px solid $borde-caja);
@@ -270,7 +278,7 @@ body {
                         animation-name: aparecer;
                         animation-iteration-count: infinite;
                         p {
-                            @include texto($texto-caja, ("Goldman", cursive, arial), center);
+                            @include texto($texto-caja, ('Oswald', cursive, arial), center);
                         }
                     }
                 }
@@ -278,9 +286,33 @@ body {
         }
     }
     footer {
+        div {
+            div {
+                div {
+                    div {
+                        div {
+                            padding-top: 30px;
+                            h3 {
+                                color: green;
+                            }
+                            span {
+                                a {
+                                    text-align: left;
+                                    font-size: 12px;
+                                    color: $texto;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         @include footer($footer-color, 1.5rem, center);
         p {
-            @include texto($texto, ("Goldman", cursive, arial), center);
+            @include texto($texto, ('Oswald', cursive, arial), right);
+            font-size: 15px;
+            padding-right: 20px;
         }
     }
 }

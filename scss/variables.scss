@@ -21,9 +21,9 @@
 @mixin sombra($sombra) {
 text-shadow: 2px 2px 0 $sombra;
 }
-@mixin texto($texto-color, $texto-estilo, $texto-alinear) {
+@mixin texto($texto, $texto-estilo, $texto-alinear) {
     display: block;
-    color: $texto-color;
+    color: $texto;
     font-family: $texto-estilo;
     text-align: $texto-alinear;
 }
