@@ -196,7 +196,7 @@ body {
             .caja {
                 h3 {
                     p {
-                        @include texto($texto, ('Oswald', cursive, arial), center);
+                        @include texto($texto, ("Oswald", cursive, arial), center);
                         @include sombra($sombra);
                     }
                 }
@@ -236,13 +236,13 @@ body {
                 p {
                     margin-top: 4px;
                     margin-bottom: 2px;
-                    color: black;
+                    color: $texto;
                 }
             }
             .caja2 {
                 @include caja($caja-color, 3px solid $borde-caja);
                 p {
-                    @include texto($texto-caja, ('Oswald', cursive, arial), center);
+                    @include texto($texto-caja, ("Oswald", cursive, arial), center);
                 }
             }
             h3 {
@@ -278,7 +278,7 @@ body {
                         animation-name: aparecer;
                         animation-iteration-count: infinite;
                         p {
-                            @include texto($texto-caja, ('Oswald', cursive, arial), center);
+                            @include texto($texto-caja, ("Oswald", cursive, arial), center);
                         }
                     }
                 }
@@ -310,7 +310,7 @@ body {
         }
         @include footer($footer-color, 1.5rem, center);
         p {
-            @include texto($texto, ('Oswald', cursive, arial), right);
+            @include texto($texto, ("Oswald", cursive, arial), right);
             font-size: 15px;
             padding-right: 20px;
         }
