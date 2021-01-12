@@ -24,6 +24,19 @@ body {
                         color: rgb(4, 77, 8);
                     }
                 }
+                tbody {
+                    tr {
+                        padding: 0.75rem;
+                        border-top: 1px solid #dee2e6;
+                        td {
+                            p {
+                                margin-top: auto;
+                                margin-bottom: 0;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
                 header {
                     div {
                         .text-dark {
