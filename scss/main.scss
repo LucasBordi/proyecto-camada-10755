@@ -196,6 +196,9 @@ body {
                 color: $color-titulo;
                 font-size: xxx-large;
                 text-align: center;
+                @media only screen and (min-width: 350px) and(max-width: 423px) {
+                    font-size: 19px;
+                }
                 @include sombra($sombra);
                 @keyframes aparecer {
                     0% {
@@ -254,6 +257,12 @@ body {
             }
             .caja2 {
                 @include caja($caja-color, 3px solid $borde-caja);
+                p {
+                    @include texto($texto-caja, ("Oswald", cursive, arial), center);
+                }
+            }
+            .top {
+                padding-top: 0px;
                 p {
                     @include texto($texto-caja, ("Oswald", cursive, arial), center);
                 }

@@ -17,6 +17,8 @@
     display: flex;
     justify-content: center;
     margin: 1.25rem 0.313rem;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 @mixin sombra($sombra) {
 text-shadow: 2px 2px 0 $sombra;
