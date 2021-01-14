@@ -196,9 +196,6 @@ body {
                 color: $color-titulo;
                 font-size: xxx-large;
                 text-align: center;
-                @media only screen and (min-width: 350px) and(max-width: 423px) {
-                    font-size: 19px;
-                }
                 @include sombra($sombra);
                 @keyframes aparecer {
                     0% {
@@ -229,6 +226,11 @@ body {
                 font-size: 25px;
                 padding: 0.625rem;
                 text-align: left;
+            }
+            .acomodo {
+                @media only screen and (min-width: 350px) and(max-width: 423px) {
+                    font-size: 19px;
+                }
             }
             .jumbotron {
                 background-color: $caja-jumbotron;
