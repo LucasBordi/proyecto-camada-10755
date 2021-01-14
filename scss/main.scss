@@ -261,7 +261,7 @@ body {
                     @include texto($texto-caja, ("Oswald", cursive, arial), center);
                 }
             }
-            .top {
+            .caja2.top {
                 @include caja($caja-color, 3px solid $borde-caja);
                 padding-top: 0px;
                 p {
