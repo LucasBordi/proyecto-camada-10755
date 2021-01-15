@@ -182,13 +182,10 @@ body {
                 .jumbotron.dos {
                     background-image: url(../img/fondo.jpg);
                     background-size: cover;
-                    color: $texto;
+                    opacity: 1;
                 }
             }
             h1 strom {
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-                animation-name: aparecer;
                 border-bottom: 0.125rem solid $color-titulo;
                 color: $color-titulo;
                 font-size: xxx-large;
@@ -205,8 +202,7 @@ body {
             }
             .caja {
                 h3 {
-                    p {
-                        @include texto($texto, ("Oswald", cursive, arial), center);
+                    b {
                         @include sombra($sombra);
                     }
                 }
@@ -238,7 +234,7 @@ body {
                 }
             }
             .padding {
-                padding-top: 15px;
+                padding: 25px 20px;
             }
             .jumbotron {
                 background-color: $caja-jumbotron;
