@@ -185,18 +185,20 @@ body {
                     opacity: 1;
                 }
             }
-            h1 strom {
-                border-bottom: 0.125rem solid $color-titulo;
-                color: $color-titulo;
-                font-size: xxx-large;
-                text-align: center;
-                @include sombra($sombra);
-                @keyframes aparecer {
-                    0% {
-                        opacity: 0;
-                    }
-                    100% {
-                        opacity: 1;
+            h1 {
+                p {
+                    border-bottom: 0.125rem solid $color-titulo;
+                    color: $color-titulo;
+                    font-size: xxx-large;
+                    text-align: center;
+                    @include sombra($sombra);
+                    @keyframes aparecer {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -213,16 +215,18 @@ body {
                 font-size: 1.3rem;
                 color: $texto;
             }
-            h2 strom {
-                border-bottom: 0.125rem solid $color-titulo;
-                color: $color-titulo;
-                font-size: 25px;
-                padding: 0.625rem;
-                text-align: left;
-            }
-            .acomodo {
-                @media only screen and (min-width: 350px) and(max-width: 423px) {
-                    font-size: 19px;
+            h2 {
+                p {
+                    border-bottom: 0.125rem solid $color-titulo;
+                    color: $color-titulo;
+                    font-size: 25px;
+                    padding: 0.625rem;
+                    text-align: center;
+                    .acomodo {
+                        @media only screen and (min-width: 350px) and (max-width: 500px) {
+                            font-size: 19px;
+                        }
+                    }
                 }
             }
             .formulario {
