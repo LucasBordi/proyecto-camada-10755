@@ -105,12 +105,12 @@ body {
                             text-align: center;
                         }
                         nav {
-                            /*barra navegacion*/
+                            /*barra navegacion hamburguesa*/
                             .navbar-toggler {
                                 padding: 0.25rem 0.75rem;
                                 font-size: 1.25rem;
                                 line-height: 1;
-                                background-color: $main;
+                                background-color: #255605;
                                 border: 3px solid #707070;
                                 border-radius: 0.25rem;
                             }
