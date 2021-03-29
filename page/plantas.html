@@ -18,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 </head>
 <!--vista de pagina principal-->
 
@@ -92,6 +93,16 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="contactos.html">Contacto</a>
                                     </li>
+                                    <li class="nav-item dropdown">
+                                        <span class="icon-cart" id="botonCarrito"
+                                            data-toggle="dropdown" role="button" aria-haspopup="true"
+                                            aria-expanded="false"> Carrito</span>
+                                        <div class="dropdown-menu">
+                                            <p id="mostrar"></p>
+                                            <p id="total"></p>
+                                            <button id="sumarTotal">COMPRAR</button>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -103,90 +114,12 @@
                         <p>Algunos de nuestros productos</p>
                     </h2>
                 </div>
-                <!--tabla de productos-->
+                <!--productos con js -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <table class="table-responsive table-image">
-                                <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Descripción</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/fittonia.jpg" class="img-fluid img-thumbnail"
-                                                alt="Fittonia">
-                                        </td>
-                                        <td>
-                                            <p class="display-5">Fittonia:</p>
-                                            <p>Planta de interior o exterior.</p>
-                                            <p>Cantidad de agua necesaria: Media.</p>
-                                            <p> Cantidad de sol requerida: Media.</p>
-                                            <p> Altura estimada de crecimiento: 50cm.</p>
-                                        </td>
-                                        <td>$700-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/peperomia.jpg" class="img-fluid img-thumbnail"
-                                                alt="Peperonia">
-                                        </td>
-                                        <td>
-                                            <p class="display-5">Peperonia:</p>
-                                            <p>Planta de interior. Cantidad de agua necesaria: Media.</p>
-                                            <p>Cantidad de sol requerida: Baja.</p>
-                                            <p>Altura estimada de crecimiento: 40cm.</p>
-                                        </td>
-                                        <td>$500-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/kalancho.jpg" class="img-fluid img-thumbnail"
-                                                alt="Kalanchoe">
-                                        </td>
-                                        <td>
-                                            <p class="display-5">Kalanchoe:</p>
-                                            <p>Planta de interior o exterior.</p>
-                                            <p> Cantidad de agua necesaria: Media.</p>
-                                            <p>Cantidad de sol: requerida Baja.</p>
-                                            <p>Altura estimada de crecimiento: 60cm.</p>
-                                        </td>
-                                        <td>$400-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/begonia.jpg" class="img-fluid img-thumbnail" alt="Begonia">
-                                        </td>
-                                        <td>
-                                            <p class="display-5">Begonia:</p>
-                                            <p>Planta de interior.</p>
-                                            <p> Cantidad de agua necesaria: Media.</p>
-                                            <p>Cantidad de sol requerida: Baja.</p>
-                                            <p>Altura estimada de crecimiento: 50cm.</p>
-                                        </td>
-                                        <td>$600-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/orquidea.jpg" class="img-fluid img-thumbnail"
-                                                alt="Orquidea">
-                                        </td>
-                                        <td>
-                                            <p class="display-5">Orquidea:</p>
-                                            <p>Planta de exterior.</p>
-                                            <p>Cantidad de agua necesaria: Media.</p>
-                                            <p>Cantidad de sol requerida: No exponer.</p>
-                                            <p>Dejar en ambiente luminoso.</p>
-                                            <p>Humedad: 70/80%.</p>
-                                        </td>
-                                        <td>$850-</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="col-10">
+                            <div id="plantas" class="card-deck">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,15 +214,17 @@
                 </div>
             </div>
         </div>
-        <p>&copy; copyright 2020&reg; Lucas Bordon
+        <p>&copy; copyright 2021&reg; Lucas Bordon
         </p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

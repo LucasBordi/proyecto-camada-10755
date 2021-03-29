@@ -44,8 +44,8 @@ body {
                             text-align: center;
                         }
                         section {
-                            background-color: $barra;
-                            border-bottom: 5px solid #707070;
+                            background-color: $main;
+                            border-bottom: 5px solid $body;
                             .bar-centro {
                                 color: $texto;
                                 text-align: center;
@@ -91,13 +91,13 @@ body {
                                 padding-left: 60%;
                             }
                             @media only screen and (min-width: 1441px) and (max-width: 1543px) {
-                                padding-left: 60%;
+                                padding-left: 45%;
                             }
                             @media only screen and (min-width: 1111px) and (max-width: 1440px) {
                                 padding-left: 40%;
                             }
                             @media only screen and (min-width: 1024px) and(max-width:1110px) {
-                                padding-left: 30%;
+                                padding-left: 10%;
                             }
                         }
                         .navbar-dark .navbar-nav .nav-link {
@@ -105,13 +105,12 @@ body {
                             text-align: center;
                         }
                         nav {
-                            background-color: $barra;
                             /*barra navegacion*/
                             .navbar-toggler {
                                 padding: 0.25rem 0.75rem;
                                 font-size: 1.25rem;
                                 line-height: 1;
-                                background-color: #223137;
+                                background-color: $main;
                                 border: 3px solid #707070;
                                 border-radius: 0.25rem;
                             }
@@ -150,6 +149,10 @@ body {
                                         border: 2px solid $borde-negro;
                                         border-radius: 0.25rem;
                                     }
+                                    span {
+                                        color: $texto;
+                                        padding-right: 50px;
+                                    }
                                     .dropdown-item {
                                         /*hover*/
                                         display: block;
@@ -174,9 +177,33 @@ body {
                                             color: $negro;
                                         }
                                     }
+                                    /*carrito de compra*/
+                                    div {
+                                        p {
+                                            
+                                            h4 {
+                                                color: $texto;
+                                            }
+                                            button.carrito {
+                                                background-color: $color-menu;
+                                                border-radius: 10px;
+                                                color: $texto;
+                                            }
+                                        }
+                                        button{
+                                            background-color: $botonComprar;
+                                            border-radius: 10px;
+                                            color: $texto;
+                                        }
+                                    }
                                 }
                             }
                         }
+                    }
+                    button.carrito {
+                        background-color: $color-menu;
+                        border-radius: 10px;
+                        color: $texto;
                     }
                 }
                 .jumbotron.dos {
@@ -294,7 +321,7 @@ body {
                     padding: 60px 0px;
                 }
                 .box-part {
-                    background: #bedbbb;
+                    background: $caja-jumbotron;
                     border-radius: 10px;
                     padding: 60px 10px;
                     margin: 30px 0px;
@@ -305,7 +332,7 @@ body {
                 p.cajita {
                     margin-top: 4px;
                     margin-bottom: 2px;
-                    color: black;
+                    color: $texto;
                 }
                 div {
                     .caja3 {
@@ -328,6 +355,9 @@ body {
                         }
                     }
                 }
+                h4 {
+                    color: $color-titulo;
+                }
             }
         }
     }
@@ -345,7 +375,7 @@ body {
                                 a {
                                     text-align: left;
                                     font-size: 12px;
-                                    color: $texto;
+                                    color: $texto-footer;
                                     text-decoration: none;
                                 }
                             }
@@ -356,7 +386,7 @@ body {
         }
         @include footer($footer-color, 1.5rem, center);
         p {
-            @include texto($texto, ("Oswald", cursive, arial), right);
+            @include texto($texto-footer, ("Oswald", cursive, arial), right);
             font-size: 15px;
             padding-right: 20px;
         }

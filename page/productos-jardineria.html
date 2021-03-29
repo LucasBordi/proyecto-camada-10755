@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 </head>
 
 <!--vista de pagina principal-->
@@ -94,96 +92,33 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="contactos.html">Contacto</a>
                                     </li>
+                                    <li class="nav-item dropdown">
+                                        <span class="icon-cart" id="botonCarrito" style="color:white"
+                                            data-toggle="dropdown" role="button" aria-haspopup="true"
+                                            aria-expanded="false"> Carrito</span>
+                                        <div class="dropdown-menu">
+                                            <p id="mostrar"></p>
+                                            <p id="total"></p>
+                                            <button id="sumarTotal">COMPRAR</button>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
                 </header>
                 <!--segundo titulo-->
-                <div class="jumbotron"> 
-                        <h2 class="display-4">
-                            <p class="acomodo">Todo para mejorar tu jardín</p>
-                        </h2> 
+                <div class="jumbotron">
+                    <h2 class="display-4">
+                        <p class="acomodo">Todo para mejorar tu jardín</p>
+                    </h2>
                 </div>
+                <!--productos js-->
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <table class="table table-image">
-                                <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Descripción</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/pala-chica-huerta.jpg" class="img-fluid img-thumbnail"
-                                                alt="Pala chica">
-                                        </td>
-                                        <td>
-                                            <p>Palita de acero con recubrimiento de pintura antioxidante y mango de
-                                                madera.</p>
-                                        </td>
-                                        <td>$150-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/combo-pala-2.jpg" class="img-fluid img-thumbnail"
-                                                alt="Combo de palas">
-                                        </td>
-                                        <td>
-                                            <p>Combo: Pala y Rastrillo de acero con recubrimiento de pintura
-                                                antioxidante y
-                                                mango de madera.</p>
-                                        </td>
-                                        <td>$450-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/maceta-animado.jpg" class="img-fluid img-thumbnail"
-                                                alt="Macetas animadas">
-                                        </td>
-                                        <td>
-                                            <p>Maceta decorativa de cemento, tamaño 20 cm.</p>
-                                        </td>
-                                        <td>$250-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/maceta-forma.jpg" class="img-fluid img-thumbnail"
-                                                alt="Maceta con formas">
-                                        </td>
-                                        <td>
-                                            <p>Maceta decorativa de cemento, tamaño 20 cm.</p>
-                                        </td>
-                                        <td>$250-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/maceta-oso.jpg" class="img-fluid img-thumbnail"
-                                                alt="Maceta oso">
-                                        </td>
-                                        <td>
-                                            <p>Maceta decorativa de cemento, tamaño 20 cm.</p>
-                                        </td>
-                                        <td>$250-</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-25">
-                                            <img src="../img/bobotox.jpg" class="img-fluid img-thumbnail"
-                                                alt="Fertilizante">
-                                        </td>
-                                        <td>
-                                            <p>Fertilizante Bobotox por 100g, producto orgánico.</p>
-                                            <p>Da fuerza a la tierra para
-                                                una mejor cosecha.</p>
-                                        </td>
-                                        <td>$120-</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="col-10">
+                            <div id="jardin" class="card-deck">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -287,6 +222,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script src="../js/Jardin.js"></script>
 </body>
 
 </html>
