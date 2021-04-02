@@ -105,12 +105,12 @@ body {
                             text-align: center;
                         }
                         nav {
-                            /*barra navegacion hamburguesa*/
+                            /*barra navegacion*/
                             .navbar-toggler {
                                 padding: 0.25rem 0.75rem;
                                 font-size: 1.25rem;
                                 line-height: 1;
-                                background-color: #255605;
+                                background-color: $main;
                                 border: 3px solid #707070;
                                 border-radius: 0.25rem;
                             }
@@ -180,7 +180,6 @@ body {
                                     /*carrito de compra*/
                                     div {
                                         p {
-                                            
                                             h4 {
                                                 color: $texto;
                                             }
@@ -190,7 +189,7 @@ body {
                                                 color: $texto;
                                             }
                                         }
-                                        button{
+                                        button {
                                             background-color: $botonComprar;
                                             border-radius: 10px;
                                             color: $texto;
@@ -211,6 +210,23 @@ body {
                     background-size: cover;
                     opacity: 1;
                 }
+            }
+            div {
+                div{
+                    div{
+                        div{
+                            div{ 
+                                .custom-select{
+                                    background: none;
+                                    background-color: $selector;
+                                    color: $texto;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                
             }
             h1 {
                 p {
