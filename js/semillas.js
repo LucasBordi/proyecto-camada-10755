@@ -21,46 +21,79 @@ class Producto {
 }
 
 
-const productosLista = [
+const semillas = [
     {
         "id": 1,
-        "nombre": "Fittonia",
-        "precio": 200,
-        "stock": 3,
-        "img": "../img/fittonia.jpg",
-        "descripcion": "Planta de interior o exterior.<br>Cantidad de agua necesaria: Media.<br>Cantidad de sol requerida: Media.<br>Altura estimada de crecimiento: 50cm."
+        "nombre": "Semillas varias.",
+        "marca": "Semillas Letho x 50gr.",
+        "precio": 50,
+        "stock": 10,
+        "img": "../img/semillas-varias.jpeg",
+        "descripcion": `Contamos con gran variedad de semillas: Tomate redondo, Achicoria, Tomate
+                        platense, Coliflor, Cebolla de verdeo, Pimiento, Zapallo Zucchini, Albahaca, Cebolla morada,
+                        Zanahoria, Berenjena, Rabanito, Cilantro.`,
+        "1": "Tomate redondo",
+        "2": "Achicoria",
+        "3": "Toamte platense",
+        "4": "Coliflor",
+        "5": "Cebolla de verdeo",
+        "6": "Pimiento",
+        "7": "Zapallo Zucchini",
+        "8": "Albahaca",
+        "9": "Cebolla morada",
+        "10": "Zanahoria",
+        "11": "Berenjena",
+        "12": "Rabanito",
+        "13": "Cilantro",
+
     },
     {
         "id": 2,
-        "nombre": "Peperonia",
-        "precio": 400,
-        "stock": 1,
-        "img": "../img/peperomia.jpg",
-        "descripcion": "Planta de interior.<br>Cantidad de agua necesaria: Media.<br>Cantidad de sol requerida: Baja.<br>Altura estimada de crecimiento: 40cm."
+        "nombre": "Semillas aromáticas.",
+        "marca": "Semillas Letho x 50gr.",
+        "precio": 55,
+        "stock": 10,
+        "img": "../img/semillas-aromaticas.jpeg",
+        "descripcion": `Contamos con gran variedad de semillas: Albahaca verde, Albahaca Roja,
+        Cebolleta, Cilantro, Eneldo, Lavanda, Manzanilla, Melisa, Menta Peperina, Orégano,
+        Perejil, Romero, Ruda.`,
+        "1": "Albahaca verde",
+        "2": "Albahaca Roja",
+        "3": "Cebolleta",
+        "4": "Cilantro",
+        "5": "Eneldo",
+        "6": "Lavanda",
+        "7": "Manzanilla",
+        "8": "Melisa",
+        "9": "Menta Peperina",
+        "10": "Orégano",
+        "11": "Perejil",
+        "12": "Romero",
+        "13": "Ruda",
     },
     {
         "id": 3,
-        "nombre": "Kalanchoe",
-        "precio": 600,
-        "stock": 2,
-        "img": "../img/kalancho.jpg",
-        "descripcion": "Planta de interior o exterior.<br>Cantidad de agua necesaria: Media.<br>Cantidad de sol requerida: Baja.<br>Altura estimada de crecimiento: 60cm."
-    },
-    {
-        "id": 4,
-        "nombre": "Begonia",
-        "precio": 450,
-        "stock": 1,
-        "img": "../img/begonia.jpg",
-        "descripcion": "Planta de interior.<br>Cantidad de agua necesaria: Media.<br>Cantidad de sol requerida: Baja.<br>Altura estimada de crecimiento: 50cm."
-    },
-    {
-        "id": 5,
-        "nombre": "Orquidea",
-        "precio": 500,
-        "stock": 1,
-        "img": "../img/orquidea.jpg",
-        "descripcion": "Planta de exterior.<br>Cantidad de agua necesaria: Media.<br>Cantidad de sol requerida: No exponer.<br>Dejar en ambiente luminoso para su mejor."
+        "nombre": "Semillas florales.",
+        "marca": "Semillas Letho x 50gr.",
+        "precio": 60,
+        "stock": 20,
+        "img": "../img/semillas-florales.jpeg",
+        "descripcion": `Contamos con gran variedad de semillas: Capuchina, Arvejilla, , Aquilegia,
+        Clavelina, Amapola, Alegria del hogar mezcla, Aleou gigante, Mix de Cactus, Bella de
+        día, Conejito, Copete, Pensamiento, Lupinus.`,
+        "1": "Capuchina",
+        "2": "Arvejilla",
+        "3": "Aquilegia",
+        "4": "Clavelina",
+        "5": "Amapola",
+        "6": "Alegria del hogar mezcla",
+        "7": "Aleou gigante",
+        "8": "Mix de Cactus",
+        "9": "Bella de día",
+        "10": "Conejito",
+        "11": "Copete",
+        "12": "Pensamiento",
+        "13": "Lupinus",
     }
 ]
 
@@ -70,8 +103,8 @@ const productosLista = [
 //funciones
 //para la seccion de plantas
 
-for (let producto of productosLista) {
-    $("#plantas").append(`         
+for (let producto of semillas) {
+    $("#semillas").append(`         
         <div class="card-columns">
             <img src="${producto.img}" class="img-fluid img-thumbnail" alt="${producto.nombre}">
             <div class="card-body">
@@ -82,6 +115,22 @@ for (let producto of productosLista) {
                     <p class="lead" style="font-size:20px" id="${producto.descripcion}">
                         ${producto.descripcion}
                     </p>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Seleccione semilla...</option>
+                        <option value="1">${producto[1]}</option>
+                        <option value="2">${producto[2]}</option>
+                        <option value="3">${producto[3]}</option>
+                        <option value="4">${producto[4]}</option>
+                        <option value="5">${producto[5]}</option>
+                        <option value="6">${producto[6]}</option>
+                        <option value="7">${producto[7]}</option>
+                        <option value="8">${producto[8]}</option>
+                        <option value="9">${producto[9]}</option>
+                        <option value="10">${producto[10]}</option>
+                        <option value="11">${producto[11]}</option>
+                        <option value="12">${producto[12]}</option>
+                        <option value="13">${producto[13]}</option>
+                    </select>
                     <h3>Precio: $ ${producto.precio}</h3>
                 </p>
             </div>
@@ -104,7 +153,7 @@ for (let producto of productosLista) {
 
 function agregarCarrito(idProducto) {
     //busca en la lista el numero elegido por el usuario.
-    const producto = productosLista.find(producto => producto.id === idProducto);
+    const producto = semillas.find(producto => producto.id === idProducto);
     console.log(producto);
     //busca en el carrito el numero ingresado por el usuario
     let item = carrito.find(producto => producto.id === idProducto);

@@ -137,8 +137,8 @@ function agregarCarrito(idProducto) {
 
 //evento manejador de boton carrito de la barra con jquery
 $(`#botonCarrito`).on(`click`, function () {
-    if(localStorage.setItem("carrito", JSON.stringify(carrito))=== carrito){
-        for(let x = 0; x <= localStorage.length; x++) {
+    if (localStorage.setItem("carrito", JSON.stringify(carrito)) === carrito) {
+        for (let x = 0; x <= localStorage.length; x++) {
             carrito.push(localStorage.setItem("carrito", JSON.stringify(carrito)));
         }
     }
@@ -154,8 +154,8 @@ $(`#botonCarrito`).on(`click`, function () {
 });
 
 function mostrarCarrito() {
-    if(localStorage.setItem("carrito", JSON.stringify(carrito))){
-        for(let x = 0; x <= localStorage.length; x++) {
+    if (localStorage.setItem("carrito", JSON.stringify(carrito))) {
+        for (let x = 0; x <= localStorage.length; x++) {
             carrito.push(localStorage.setItem("carrito", JSON.stringify(carrito)));
         }
     }
@@ -211,10 +211,13 @@ $(`#sumarTotal`).on(`click`, function () {
                             <div>GRACIAS POR SU COMPRA!!
                                 <p>Pronto recibiras tu pedido</p>
                             </div> 
+                            <input type="button" id="refrescar" value="X" class="btn btn-danger"></input>
                         </div>`)
+        renderizar();
     });
     // conCuantoPagas();
 });
+
 
 
 /*
@@ -232,3 +235,12 @@ function conCuantoPagas() {
     }
     precioFinal = 0;
 }*/
+
+function renderizar() {
+    $(document).ready(function () {
+        $("#refrescar").click(function () {
+            //Actualizamos la página
+            location.reload();
+        });
+    });
+}
