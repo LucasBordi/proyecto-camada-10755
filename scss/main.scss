@@ -19,15 +19,18 @@ body {
                     th {
                         color: darkblue;
                         font-size: small;
+                        text-align: center;
                     }
                     td {
                         color: rgb(4, 77, 8);
+                        text-align: center;
                     }
                 }
                 tbody {
                     tr {
-                        padding: 0.75rem;
                         border-top: 1px solid #dee2e6;
+                        padding: 0.75rem;
+                        text-align: center;
                         td {
                             p {
                                 margin-top: auto;
@@ -110,7 +113,7 @@ body {
                                 padding: 0.25rem 0.75rem;
                                 font-size: 1.25rem;
                                 line-height: 1;
-                                background-color: $botonComprar;
+                                background-color: $body;
                                 border: 3px solid #707070;
                                 border-radius: 0.25rem;
                             }
@@ -182,6 +185,7 @@ body {
                                         p {
                                             h4 {
                                                 color: $texto;
+                                                font-size: 15px;
                                             }
                                             button.carrito {
                                                 background-color: $color-menu;
@@ -193,16 +197,22 @@ body {
                                             background-color: $botonComprar;
                                             border-radius: 10px;
                                             color: $texto;
+                                            a{
+                                                color: white;
+                                            }
+                                        }
+                                        .carrito {
+                                            background-color: green;
+                                            border-radius: 10px;
+                                            width: 166px;
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                            height: 31px;
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-                    button.carrito {
-                        background-color: $color-menu;
-                        border-radius: 10px;
-                        color: $texto;
                     }
                 }
                 .jumbotron.dos {
@@ -212,21 +222,35 @@ body {
                 }
             }
             div {
-                div{
-                    div{
-                        div{
-                            div{ 
-                                .custom-select{
+                div {
+                    div {
+                        h2{
+                            color: $negro;
+                        }
+                        p {
+                            /*boton finalizar compra*/
+                            button {
+                                background-color: green;
+                                border-radius: 10px;
+                                color: $texto;
+                                a {
+                                    color: white;
+                                    text-decoration: none;
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                        div {
+                            div {
+                                .custom-select {
                                     background: none;
                                     background-color: $selector;
                                     color: $texto;
                                 }
-                                
                             }
                         }
                     }
                 }
-                
             }
             h1 {
                 p {
