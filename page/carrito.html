@@ -1,7 +1,7 @@
 <!doctype html>
 
 <head>
-    <title>Vivero Santa Mandarina-productos de jardineria</title>
+    <title> Vivero Santa Mandarina - Plantas y Semillas</title>
     <meta charset="utf-8">
     <meta charset="es">
     <meta name="description" content="En nuestro vivero encontraras todo lo necesario para su jardin,
@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <script src="../js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
 </head>
-
 <!--vista de pagina principal-->
 
 <body>
@@ -53,7 +54,7 @@
                             <div class="p-2 flex-fill text-dark bar-left">
                                 <a class="nav-item"
                                     href="https://www.google.com.ar/maps/place/Evaristo+Carriego+1804,+B1685FLV+El+Palomar,+Provincia+de+Buenos+Aires/@-34.6307436,-58.5969317,
-                                        17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb87c838ab37d:0x5165b6a016c3abf0!8m2!3d-34.630748!4d-58.5947377"
+                                    17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb87c838ab37d:0x5165b6a016c3abf0!8m2!3d-34.630748!4d-58.5947377"
                                     target="_black">
                                     <span class="icon-location">
                                     </span>
@@ -92,13 +93,6 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="contactos.html">Contacto</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <span class="icon-cart" id="botonCarrito" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Carrito</span>
-                                        <div class="dropdown-menu">
-                                            <p id="mostrar"></p>
-                                            <a class="nav-link carrito" href="carrito.html">Ver Carrito</a>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -107,15 +101,17 @@
                 <!--segundo titulo-->
                 <div class="jumbotron">
                     <h2 class="display-4">
-                        <p class="acomodo">Todo para mejorar tu jardín</p>
+                        <p class="acomodo">CARRITO</p>
                     </h2>
                 </div>
                 <!--productos js-->
                 <div class="container">
                     <div class="row">
                         <div class="col-10">
-                            <div id="jardin" class="card-deck">
-                            </div>
+                            <div id="tabla"></div>
+                            <p id="mensaje"></p>
+                            <p id="total"></p>
+                            <p id="gracias"></p>
                         </div>
                     </div>
                 </div>
@@ -139,7 +135,7 @@
         <div class="box">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <div class="box-part text-center">
                             <div class="title">
                                 <h3>Navegación</h3>
@@ -200,7 +196,7 @@
                                 <span>
                                     <h4>
                                         <a href="https://www.google.com.ar/maps/place/Evaristo+Carriego+1804,+B1685FLV+El+Palomar,+Provincia+de+Buenos+Aires/@-34.6307436,-58.5969317,
-                                                        17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb87c838ab37d:0x5165b6a016c3abf0!8m2!3d-34.630748!4d-58.5947377"
+                                                17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb87c838ab37d:0x5165b6a016c3abf0!8m2!3d-34.630748!4d-58.5947377"
                                             target="_black">Evaristo Carriego 1804, Palomar, Buenos Aires.</a>
                                     </h4>
                                 </span>
@@ -210,7 +206,7 @@
                 </div>
             </div>
         </div>
-        <p>&copy; copyright 2020&reg; Lucas Bordon
+        <p>&copy; copyright 2021&reg; Lucas Bordon
         </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -219,8 +215,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
-    <script src="../js/Jardin.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
